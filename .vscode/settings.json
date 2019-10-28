@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/db2ee2cb-b704-4975-ab32-46d461d6582f/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/KwokJustinWebLab5",
+    "appService.deploySubpath": ""
+}

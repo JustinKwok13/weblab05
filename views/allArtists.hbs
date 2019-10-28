@@ -1,0 +1,15 @@
+{{#each artists}}
+<div class = 'list' >
+    <form id="artistForm" action="/delete/{{this.name}}" method = "POST">
+        <button id='delbtn' type='submit'>Delete</button>
+    </form>
+
+    <div class= "triplediv">
+        <img src='{{this.img}}', class='listimg'/>
+    </div>
+    <div class="triplediv">
+        <p class='listtexttitle'>{{this.name}}</p>
+        <p class='listtext'>{{this.about}}</p>
+    </div>
+</div>
+{{/each}}

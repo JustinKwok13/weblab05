@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <script src="../public/js/hideFields.js"></script>
+    <title>
+        Lab 05
+    </title>
+    <link href="../public/css/lab05.css" rel="stylesheet" type="text/css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+<body>
+<div class="center">
+    <h2>Artist Directory</h2>
+    <form class="inputartist" action="/search" method="POST">
+        <input id="searchtext" name="searchtext" type="text">
+        <button id="searchbutton" type="submit">Search</button>
+    </form>
+    <button id="artistbutton" type="submit" onclick="buttonartist()">Add Artist</button>
+    <div class="divheight"></div>
+</div>
+<div id="inputdiv" class="inputlist">
+    <form id="createArt" action="/addArtist" method="POST">
+        <input type="text" name="name" id="nameinput" class="inputform" placeholder="Artist Name" maxlength="40"></br>
+        <input type="text" name="about" id="aboutinput" class="inputform" placeholder="About Artist" maxlength="40"></br>
+        <input type="text" name="img" id="imginput" class="inputform" placeholder="Image URL"></br>
+        <button id="addbtn" type="submit">ADD</button>
+    </form>
+</div>
+
+<div id="wrap">
+    {{{body}}}
+</div>
+
+</body>
+</html>
