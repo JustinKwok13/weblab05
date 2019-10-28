@@ -29,4 +29,7 @@ app.get('/', (req,res) => {
     res.redirect(301, '/art');
 });
 
-app.listen(3000, () => console.log('Server ready'))
+const port = process.env.PORT || 3000
+var server = app.listen(port,() => {
+    console.log("Server started", port);
+});
